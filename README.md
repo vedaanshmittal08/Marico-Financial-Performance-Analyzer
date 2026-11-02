@@ -1,7 +1,5 @@
 # Marico Limited – Python Financial Analytics
 
-#### Video Demo: <ADD YOUR VIDEO URL HERE>
-
 ## Description
 
 This project is a Python-based financial analysis of Marico Limited, covering its consolidated historical financial performance from FY2023 to FY2026.
