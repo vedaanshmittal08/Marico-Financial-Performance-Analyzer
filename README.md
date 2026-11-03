@@ -1,52 +1,59 @@
-# Marico Limited – Python Financial Analytics
+# Marico Limited – Financial Analytics & Valuation
 
-## Description
+An integrated financial analytics and valuation project on Marico Limited, combining Python-based financial statement analysis with Excel-based financial forecasting and DCF valuation.
 
-This project is a Python-based financial analysis of Marico Limited, covering its consolidated historical financial performance from FY2023 to FY2026.
+## Project Overview
 
-The objective is to apply Python programming to financial statement analysis and demonstrate how programming can be used to process financial data, calculate important financial metrics, analyse business performance and generate visualisations.
+This project analyses Marico Limited's consolidated financial performance and develops an independent intrinsic valuation using historical financial data, financial modelling and quantitative analysis.
 
-The project uses Pandas for financial data processing and calculations, and Matplotlib for creating financial charts. Instead of manually calculating every metric, the program processes the historical financial dataset and produces a structured analysis that can be reproduced whenever the underlying data is updated.
+## Project Components
 
-The project complements a separate Excel financial modelling and DCF valuation exercise. Excel remains the primary tool for forecasting and valuation, while Python is used for historical financial analysis and data visualisation.
+### 1. Python – Financial Performance Analysis
 
-## Features
+A Python-based analytical framework covering Marico's consolidated historical financial performance from FY2023 to FY2026.
 
-- Historical consolidated financial data analysis for FY2023–FY2026.
-- Automated calculation of revenue growth and profitability metrics.
-- EBITDA, EBITDA margin, EBIT and NOPAT calculations.
-- Working capital analysis, including operating NWC and changes in NWC.
+- Historical financial data processing and analysis.
+- Financial statement analysis using Python.
+- Data handling and analytical workflows.
+- Automated testing of project functionality.
+
+**Technologies:** Python, pandas, NumPy and related analytical libraries.
+
+### 2. Excel – Financial Modelling & DCF Valuation
+
+An integrated five-year financial forecasting and FCFF-based Discounted Cash Flow valuation model.
+
+- Consolidated financial statement forecasting (FY2027–FY2031).
+- Revenue, profitability, taxation and working capital projections.
 - Free Cash Flow to Firm (FCFF) calculation.
-- Revenue CAGR and EBITDA CAGR calculations.
-- Historical profitability analysis.
-- Revenue and EBITDA margin trend charts.
-- Export of calculated financial metrics into a CSV file.
-- Automated testing using pytest.
+- WACC estimation using CAPM, regression beta and comparable-company analysis.
+- Terminal value and intrinsic equity valuation.
+- Sensitivity analysis.
 
-## Functions
+**Methodology:** FCFF-based Discounted Cash Flow (DCF).
 
-The project contains five functions in `project.py`:
+[View Excel Valuation Model](Excel_model/Marico%20Valuation.xlsx) | [Excel Model Documentation](Excel_model/README.md)
 
-**1. load_data()**
+## Repository Structure
 
-Uses Pandas to read the historical financial data from `marico_historicals.csv` and load it into a DataFrame.
+```text
+Marico-Financial-Performance-Analyzer/
+│
+├── data/
+│
+├── Excel_model/
+│   ├── Marico Valuation.xlsx
+│   └── README.md
+│
+├── project.py
+├── test_project.py
+└── README.md
+```
 
-**2. calculate_metrics()**
+## Data Sources
 
-Calculates financial metrics including revenue growth, EBITDA, EBITDA margin, EBIT, effective tax rate, NOPAT, operating net working capital, change in NWC and FCFF.
+Historical financial information is based on Marico Limited's publicly available financial statements and annual reports. Market data and valuation assumptions are used for analytical purposes.
 
-The FCFF calculation follows:
+## Disclaimer
 
-FCFF = NOPAT + Depreciation and Amortisation - Capital Expenditure - Change in NWC
-
-**3. summarize_performance()**
-
-Calculates historical performance indicators, including revenue CAGR, EBITDA CAGR, average EBITDA margin and the latest EBITDA margin.
-
-**4. plot_metrics()**
-
-Uses Matplotlib to generate revenue and EBITDA margin trend charts. The charts are saved as PNG files in the output directory.
-
-**5. main()**
-
-Coordinates the execution of the program by loading the data, calculating financial metrics, displaying the results, exporting the processed dataset and generating visualisations.
+This project represents independent financial analysis and academic work. It is not investment advice or a recommendation to buy or sell securities.
