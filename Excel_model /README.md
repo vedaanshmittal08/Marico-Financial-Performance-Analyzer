@@ -13,6 +13,6 @@ This folder contains the integrated financial forecasting and valuation model fo
 ### Methodology
 The company is valued using the Discounted Cash Flow (DCF) methodology based on Free Cash Flow to Firm (FCFF).
 
-**File:** `Marico_DCF_Model.xlsx`
+**File:** `Marico_Valuation.xlsx`
 
 *Financial information is based on publicly available company filings and market data. The model represents independent academic and analytical work, not investment advice.*
